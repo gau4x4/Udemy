@@ -1,0 +1,10 @@
+<div class="form-floating mb-3 mt-3 col-sm-6">
+  <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="Item"
+    (keyup)="addNewItem(Item)"
+    id="email"
+  />
+  <label for="email"> {{ "Name:" }}</label>
+</div>

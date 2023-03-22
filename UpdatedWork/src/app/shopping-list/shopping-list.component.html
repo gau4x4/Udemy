@@ -1,0 +1,21 @@
+<app-shop-list-edit
+  (shoppingList)="onShoppingItemAdded($event)" (deleteIngredient)="onIngredientDeleted($event)"
+></app-shop-list-edit>
+<hr>
+<div class="app-shopping-list-container">
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="list-group" *ngFor="let ingredient of ingredientList">
+        <li class="list-group-item list-group-item-action">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="check1"
+            name="option1"
+            value="something"
+          />{{ ingredient.name }}({{ ingredient.amount }})
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
